@@ -36,9 +36,9 @@ if sys.platform == "win32":
 
 
 def maya_math_nodes_setup(env):
-    env.Append(CPPDEFINES=[('NODE_NAME_PREFIX', '\"\\\"math_\\\"\"')])
     env.Append(CCFLAGS=["-Os"])
-    env.Append(CPPFLAGS=" -DPROJECT_VERSION=\"\\\"1.4.0\\\"\"")
+    env.Append(CPPDEFINES=["NODE_NAME_PREFIX=\\\"math_\\\"",
+                           "PROJECT_VERSION=\\\"1.5.1\\\""])
 
 
 def CVWrapSetup(env):
@@ -102,9 +102,10 @@ targets = [
         "bldprefix": maya.Version(),
         "ext": maya.PluginExt(),
         "defs": defines,
-        "incdirs": ["plugins/src"],
+        "incdirs": ["plugins/maya-math-nodes/src"],
         "srcs": excons.glob("plugins/maya-math-nodes/src/*.cpp"),
-        "custom": [maya.Require, maya_math_nodes_setup]
+        "custom": [maya.Require, maya_math_nodes_setup],
+        "install": {"scripts": ["plugins/maya-math-nodes/python/maya_math_nodes"]}
     },
     {
         "name": "grim_IK",
