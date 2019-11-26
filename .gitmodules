@@ -1,6 +1,6 @@
 [submodule "excons"]
 	path = excons
-	url = git://github.com/mgear-dev/excons.git
+	url = git://github.com/marza-animation-planet/excons.git
 [submodule "Qtdotpy"]
 	path = Qtdotpy
 	url = git://github.com/marza-animation-planet/Qt.py
@@ -39,7 +39,7 @@
 	url = git://github.com/mgear-dev/grim_IK.git
 [submodule "plugins/cvwrap"]
 	path = plugins/cvwrap
-	url = git://github.com/mgear-dev/cvwrap.git
+	url = git://github.com/marza-animation-planet/cvwrap.git
 [submodule "framework/crank"]
 	path = framework/crank
 	url = git://github.com/mgear-dev/crank.git
