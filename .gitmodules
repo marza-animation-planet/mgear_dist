@@ -27,7 +27,7 @@
 	url = git://github.com/mgear-dev/simpleRig.git
 [submodule "framework/synoptic"]
 	path = framework/synoptic
-	url = git://github.com/mgear-dev/synoptic.git
+	url = git://github.com/marza-animation-planet/mgear_synoptic.git
 [submodule "plugins/maya-math-nodes"]
 	path = plugins/maya-math-nodes
 	url = git://github.com/mgear-dev/maya-math-nodes.git
