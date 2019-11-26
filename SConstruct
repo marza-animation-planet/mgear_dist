@@ -116,6 +116,7 @@ targets = [
         "defs": defines,
         "incdirs": ["plugins/grim_IK"],
         "srcs": excons.glob("plugins/grim_IK/*.cpp"),
+        "install": {"scripts": excons.glob("plugins/grim_IK/*.mel")},
         "custom": [maya.Require]
     },
     {
