@@ -80,5 +80,6 @@ CMakeLists.txt text eol=lf
 *.txt          text eol=lf
 *.py.in        text eol=lf
 *.mod.in       text eol=lf
+*.sgt          text eol=lf
 LICENSE        text eol=lf
 
