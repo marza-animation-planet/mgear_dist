@@ -49,6 +49,9 @@ excons.cache
 /mgear.config
 /mGear_cmd.cmd
 /mgear.status
+/framework/scripts/mgear/__init__.py
+/framework/scripts/mgear/version.py
+/mGear.mod
 
 
 cover/
