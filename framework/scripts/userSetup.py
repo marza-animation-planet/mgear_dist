@@ -4,6 +4,18 @@ from maya import cmds
 from pymel import mayautils
 from cvwrap.menu import create_menuitems
 
+print("""
+ ____________________________________
+|             _____                  |
+|            / ____|                 |
+|  _ __ ___ | |  __  ___  __ _ _ __  |
+| | '_ ` _ \| | |_ |/ _ \/ _` | '__| |
+| | | | | | | |__| |  __/ (_| | |    |
+| |_| |_| |_|\_____|\___|\__,_|_|    |
+|____________________________________|
+
+""")
+
 
 def mGear_menu_loader():
     """Create mGear menu"""
@@ -11,6 +23,10 @@ def mGear_menu_loader():
     # Install mGear Menu
     import mgear
     mgear.install()
+
+    # Install Dag Menu option
+    import mgear.core.dagmenu
+    mgear.core.dagmenu.install()
 
     # Install Shifter Menu
     import mgear.shifter.menu
@@ -32,9 +48,13 @@ def mGear_menu_loader():
     import mgear.animbits.menu
     mgear.animbits.menu.install()
 
-    # Install Synoptic Menu
+    # Install Crank Menu
     import mgear.crank.menu
     mgear.crank.menu.install()
+
+    # Install Anim Picker Menu
+    import mgear.anim_picker.menu
+    mgear.anim_picker.menu.install()
 
     # Install Synoptic Menu
     import mgear.synoptic.menu

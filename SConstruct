@@ -9,7 +9,7 @@ maya.SetupMscver()
 env = excons.MakeBaseEnv()
 
 
-version = (3, 2, 1)
+version = (3, 4, 0)
 versionstr = "%d.%d.%d" % version
 platname = {"win32": "windows", "darwin": "osx"}.get(sys.platform, "linux")
 outprefix = "platforms/%s/%s/%s/plug-ins" % (maya.Version(nice=True), platname, excons.arch_dir)
@@ -60,6 +60,7 @@ targets = [
                     "scripts/mgear/core": excons.glob("framework/mgear_core/scripts/mgear/core/*"),
                     "scripts/mgear/crank": excons.glob("framework/crank/scripts/mgear/crank/*"),
                     "scripts/mgear/animbits": excons.glob("framework/animbits/scripts/mgear/animbits/*"),
+                    "scripts/mgear/anim_picker": excons.glob("framework/anim_picker/scripts/mgear/anim_picker/*"),
                     "scripts/mgear/rigbits": excons.glob("framework/rigbits/scripts/mgear/rigbits/*"),
                     "scripts/mgear/simpleRig": excons.glob("framework/simpleRig/scripts/mgear/simpleRig/*"),
                     "scripts/mgear/synoptic": excons.glob("framework/synoptic/scripts/mgear/synoptic/*"),

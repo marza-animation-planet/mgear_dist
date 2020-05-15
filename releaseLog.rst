@@ -1,6 +1,30 @@
 Release Log
 ===========
 
+
+3.4.0
+-----
+**New Features**
+	* Anim Picker: New Animation Picker [anim_picker#2]
+	* mGear_core: mGear viewport menu [mgear_core#38]
+	* Rigbits: SDK Manager [rigbits#42]
+	* Shifter_classic_components: SDK manager special component [shifter_classic_components#75]
+
+3.3.1
+-----
+**Bug Fix**
+	* Rigbits: Facial rigger tools QT aligment argument [rigbits#44]
+
+3.3.0
+-----
+**New Features**
+	* Shifter_classic_components: Cable component [shifter_classic_components#73]
+	* Shifter_classic_components: UI_slider and UI_container component [shifter_classic_components#66]
+	* Rigbits: New eyebrow Rigger [rigbits#40]
+
+**Enhancements**
+	* Shifter_classic_components: Control_01: Expose more space switch options [shifter_classic_components#7]
+
 3.2.1
 -----
 **Enhancements**
